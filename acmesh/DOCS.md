@@ -12,7 +12,7 @@ Follow these steps to get the add-on installed on your system:
 
 Add-on configuration:
 
-```json
+```yaml
 accountemail: mail@example.com
 domain: home.example.com
 dns: dns_cf

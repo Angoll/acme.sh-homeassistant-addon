@@ -5,7 +5,7 @@ This a home assistant integration of the acme.sh project. It allows to generate 
 ## Configuration
 Tested with the *dns_cf* configuration but It should work, the dnsEnvVariables can be configured with any environment required for acme.sh to work.
 
-```json
+```yaml
 accountemail: mail@example.com
 domain: home.example.com
 dns: dns_cf
