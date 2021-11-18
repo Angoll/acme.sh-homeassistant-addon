@@ -2,7 +2,7 @@
 
 This a home assistant integration of the acme.sh project. It allows to generate a TLS certificate using the ACME protocol.
 
-## Configuration
+## Configuration
 Tested with the *dns_cf* configuration but It should work, the dnsEnvVariables can be configured with any environment required for acme.sh to work.
 
 ```yaml
@@ -19,6 +19,17 @@ dnsEnvVariables:
 keylength: ec-256
 fullchainfile: fullchain.pem
 keyfile: privkey.pem
+```
+
+## Home Assistant /config/configuration.yaml
+
+```yaml
+http:
+  server_port: 443
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+  ip_ban_enabled: true
+  login_attempts_threshold: 5
 ```
 
 ## About
